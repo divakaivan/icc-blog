@@ -1,2 +1,1 @@
-mysite/secret_key.txt
-.env
+mysite/mysite/settings.py

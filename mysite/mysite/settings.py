@@ -87,13 +87,13 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-from .secret_key import PASSWORD
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': "portfoliodb",
         "USER": "postgres",
-        "PASSWORD": PASSWORD,
+        "PASSWORD": os.environ.get('DB_PASS'),
         "HOST": "localhost",
         "PORT": "5432"
     }
