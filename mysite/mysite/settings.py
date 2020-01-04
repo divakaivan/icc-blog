@@ -24,7 +24,7 @@ print(STATIC_ROOT)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 # SECURITY WARNING: keep the secret key used in production secret!
-with open('D:/Coding/secret_key.txt') as f:
+with open('C:\\Dev\\Code\\icc-blog\\mysite\\static\\mysite\\secret_key.txt') as f:
     SECRET_KEY = f.read().strip()
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
