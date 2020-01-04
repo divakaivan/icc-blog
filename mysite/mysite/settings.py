@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+
+import databases as DATABASES
 import django_heroku
 from django.core.management.utils import get_random_secret_key
 
@@ -49,7 +51,11 @@ INSTALLED_APPS = [
     'ckeditor'
 ]
 
-
+import psycopg2
+DATABASE_URL = os.environ['DATABASE_URL']
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+import dj_database_url
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
