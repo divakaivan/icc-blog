@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 import django_heroku
+from django.core.management.utils import get_random_secret_key
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -24,8 +25,12 @@ print(STATIC_ROOT)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 # SECURITY WARNING: keep the secret key used in production secret!
-with open('C:\\Dev\\Code\\icc-blog\\mysite\\static\\mysite\\secret_key.txt') as f:
-    SECRET_KEY = f.read().strip()
+try:
+    from .secret_key import SECRET_KEY
+except ImportError:
+    SETTINGS_DIR = os.path.abspath(os.path.dirname(__file__))
+    SECRET_KEY = get_random_secret_key()
+
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 
