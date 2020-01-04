@@ -6,3 +6,4 @@ urlpatterns = [
     path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
     path(r'ckeditor/', include('ckeditor_uploader.urls')),
 ]
+
