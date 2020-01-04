@@ -126,6 +126,6 @@ USE_TZ = True
 
 MEDIA_URL = '/media/'
 CKEDITOR_UPLOAD_PATH = 'uploads/'
-STATIC_ROOT = "/Dev/Code/icc-blog/mysite/static"
+STATIC_ROOT = "/Dev/Code/icc-blog/mysite/staticfiles"
 
 django_heroku.settings(locals())
