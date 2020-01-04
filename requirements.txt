@@ -5,3 +5,5 @@ django-heroku
 django-ckeditor
 psycopg2-binary
 dj-database-url
+whitenoise
+psycopg2
