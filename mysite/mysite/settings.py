@@ -21,14 +21,13 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-print(STATIC_ROOT)
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 # SECURITY WARNING: keep the secret key used in production secret!
 try:
     from .secret_key import SECRET_KEY
 except ImportError:
-    SETTINGS_DIR = os.path.abspath(os.path.dirname(__file__))
     SECRET_KEY = get_random_secret_key()
 
 # SECURITY WARNING: don't run with debug turned on in production!
