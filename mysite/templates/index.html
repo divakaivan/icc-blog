@@ -56,12 +56,12 @@
         }
     }
     #def-def {
-        animation: type1 2s steps(22);
+        animation: type1 2s steps(21);
         animation-delay: 1.75s;
         overflow: hidden;
         white-space: nowrap;
         font-family: Consolas, monospace;
-        width: 22ch;
+        width: 21ch;
         visibility: hidden;
     }
 
@@ -70,16 +70,16 @@
             width: 0;
         }
         100% {
-            width: 22ch;
+            width: 21ch;
         }
     }
     #return {
-        animation: type2 2s steps(21);
+        animation: type2 2s steps(20);
         animation-delay: 3.5s;
         overflow: hidden;
         white-space: nowrap;
         font-family: Consolas, monospace;
-        width: 21ch;
+        width: 20ch;
         visibility: hidden;
         word-wrap: normal;
     }
@@ -89,16 +89,16 @@
             width: 0;
         }
         100% {
-            width: 21ch;
+            width: 20ch;
         }
     }
         #return-finish {
-        animation: type3 2s steps(20);
+        animation: type3 2s steps(24);
         animation-delay: 5s;
         overflow: hidden;
         white-space: nowrap;
         font-family: Consolas, monospace;
-        width: 20ch;
+        width: 24ch;
         visibility: hidden;
         word-wrap: normal;
     }
@@ -108,7 +108,7 @@
             width: 0;
         }
         100% {
-            width: 20ch;
+            width: 24ch;
         }
     }
 
@@ -138,12 +138,12 @@
             <!--TODO: figure out how to properly add static files with Django-->
             <img class="img-fluid" src="https://github.com/divakaivan/icc-blog/blob/master/mysite/static/mysite/code-pc-welcome.png?raw=true"/>
         </div>
-        <div class="align-self-center col-md-5 sm-12">
-            <p style="font-size: 28px" class="class-def"><span style="color: #ba0cdd">class</span> <span style="color: #ff7805">Greeting</span>:</p>
+        <div id="code-snippet" class="align-self-center col-md-5 col-sm-12">
+            <p style="font-size: 27px" class="class-def"><span style="color: #ba0cdd">class</span> <span style="color: #ff7805">Greeting</span>:</p>
             <br>
-            <p style="font-size: 28px" id="def-def">&emsp;&emsp;<span style="color: #ba0cdd">def</span> <span style="color: #0b4fff">__str__</span>(<span style="color: #b80000">self</span>):</p>
-            <p style="font-size: 28px" id="return">&emsp;&emsp;&emsp;&emsp;<span style="color: #ba0cdd">return</span> <span style="color: limegreen">"Greetings</span></p>
-            <p style="font-size: 28px" id="return-finish">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="color: limegreen">from IvanBot"</span></p>
+            <p style="font-size: 27px" id="def-def">&nbsp;&nbsp;<span style="color: #ba0cdd">def</span> <span style="color: #0b4fff">__str__</span>(<span style="color: #b80000">self</span>):</p>
+            <p style="font-size: 27px" id="return">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ba0cdd">return</span> <span style="color: limegreen">"Hello</span></p>
+            <p style="font-size: 27px" id="return-finish">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: limegreen">from IvanBot"</span></p>
         </div>
         <div class="col-md-2 sm-0"></div>
     </div>
