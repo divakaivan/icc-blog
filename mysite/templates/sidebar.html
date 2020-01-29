@@ -1,22 +1,47 @@
 {% block sidebar %}
 
 <style>
-        .card{
-            box-shadow: 0 16px 48px #E3E7EB;
-        }
+    .card {
+        box-shadow: 0 16px 48px #E3E7EB;
+    }
 
 </style>
 
 <!-- Sidebar Widgets Column -->
 <div class="col-md-4 float-right ">
-<div class="card my-4">
+    <div class="card my-4">
         <h5 class="card-header border-dark bg-dark text-white">About me</h5>
-    <div class="card-body">
-        <p class="card-text">Excited about tech and highly motivated to become a software developer.
-            I love the day-to-day problem-solving that programming brings and excited to be part of the programmer community.
-        </p>
+        <div class="card-body">
+            <p class="card-text">Excited about tech and highly motivated to become a software developer.
+                I love the day-to-day problem-solving that programming brings and excited to be part of the programmer
+                community.
+            </p>
+        </div>
     </div>
-</div>
+    <div class="card my-4">
+        <h5 class="card-header border-dark bg-dark text-white">What I learned so far</h5>
+        <div class="card-body">
+            <p class="card-text">
+                Languages/software I learned/improved:
+                <ul>
+                    <li>Python and Django</li>
+                    <li>React and CSS</li>
+                    <li>Node/express for APIs</li>
+                    <li>MongoDB</li>
+                    <li>Basics of Kubernetes</li>
+                </ul>
+                Projects/pieces of code I wrote:
+                <ul>
+                    <li>This Django blog and deployed it to heroku</li>
+                    <li>Game info extractor using Riot Game's API</li>
+                    <li>PDF summarizer for annual reports</li>
+                    <li>Built the UI for an Esports project</li>
+                    <li>Wrote the API for the Esports project and connected it to MongoDB</li>
+                    <li>Python text-based adventure game</li>
+                </ul>
+            </p>
+        </div>
+    </div>
 </div>
 
 {% endblock sidebar %}
