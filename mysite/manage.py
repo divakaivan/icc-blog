@@ -3,10 +3,6 @@
 import os
 import sys
 
-from django.contrib.auth.models import User
-u = User.objects.get(username="admin")
-u.set_password("123321")
-print(u)
 def main():
     os.environ["DJANGO_SETTINGS_MODULE"] = "mysite.settings"
     try:
